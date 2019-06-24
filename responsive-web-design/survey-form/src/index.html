@@ -1,0 +1,92 @@
+<h1 id="title">SURVEY FORM</h1>
+<div id="form-outer">
+  <p id="description">
+    Let us know how we can improve Twitch
+  </p>
+  <form id="survey-form">
+      <div>
+        <div class="labels">
+          <label id="name-label" for ="name">* Name: </label>
+          </div>
+        <div class="right-side">
+          <input type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+          </div>
+        </div>
+    <div>
+      <div class="labels">
+        <label id="email-label" for="email">* Email: </label>
+        </div>
+      <div class="right-side">
+        <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your email">
+        </div>
+      </div>
+    <div>
+      <div class="labels">
+        <label id="number-label" for="number">* Age: </label>
+       </div>
+      <div class="right-side">
+        <input type="number" name="number" id="number" class="input-field" required placeholder="Enter your age (13-99)" min="13" max="99">
+       </div>
+      </div>
+    <div>
+      <div class="labels">
+        <label id="dropdown-label" for="dropdown">Are you a viewer or streamer?</label>
+      </div>
+      <div class="right-side">
+        <select class="dropdown" name="dropdown" id="dropdown">
+          <option value="viewer">Viewer</option>
+          <option value="streamer">Streamer</option>
+        </select>
+       </div>
+      </div>
+    <div>
+      <div class="labels">
+        <label id="timespent-label" for="timespent">How many hours a week do you watch or stream on Twitch?</label>
+         </div>
+         <div class="right-side">
+            <ul style="list-style: none;">
+               <li class="radio">
+                  <input type="radio" name="timespent" value="lessthan5">Less than 5</li>
+               <li class="radio">
+                  <input type="radio" name="timespent" value="lessthan10">Less than 10</li>
+               <li class="radio">
+                  <input type="radio" name="timespent" value="lessthan15">Less than 15</li>
+               <li class="radio">
+                  <input type="radio" name="timespent" value="lessthan20">Less than 20</li>
+               <li class="radio">
+                  <input type="radio" name="timespent" value="morethan24">More than 24</li>
+            </ul>
+         </div>
+      </div>
+      <div>
+         <div class="labels">
+            <label id="priorities-label" for="priorities">What are some things Twitch should focus on improving?</label>
+         </div>
+         <div class="right-side">
+            <ul id="priorities" style="list-style: none;">
+               <li class="checkbox">
+                  <input type="checkbox" name="priorities" value="design">Design</li>
+               <li class="checkbox">
+                  <input type="checkbox" name="priorities" value="functionality">Functionality</li>
+               <li class="checkbox">
+                  <input type="checkbox" name="priorities" value="affiliateperks">More perks for Affiliates</li>
+               <li class="checkbox">
+                  <input type="checkbox" name="priorities" value="rules">Equal/fair application of the rules</li>
+               <li class="checkbox">
+                  <input type="checkbox" name="priorities" value="ads">Less ads</li>
+               <li class="checkbox">
+                  <input type="checkbox" name="priorities" value="twitchprime">More Twitch Prime perks</li>
+            </ul>
+         </div>
+      </div>
+      <div>
+         <div class="labels">
+            <label id="comments-label" for="comments">Any additional comments?</label>
+         </div>
+         <div class="right-side">
+            <textarea type="text" name="comments" class="comments" placeholder="Share your ideas, thoughts or concerns..." required></textarea>
+         </div>
+      </div>
+      <button id="submit" value="submit">SUBMIT</button>
+   </form>
+</div>

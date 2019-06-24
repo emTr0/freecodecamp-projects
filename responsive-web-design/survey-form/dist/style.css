@@ -1,0 +1,135 @@
+body {
+   background-color: #6441a5;
+   text-align: center;
+   min-width: 350px;
+}
+
+h1 {
+   color: #f1f1f1;
+   font-size: 2em;
+   font-weight: bold;
+}
+
+#form-outer {
+  background-color: #f1f1f1;
+  margin: 0 auto;
+  border-radius: 4px;
+  width: 75%;
+  max-width: 900px;
+  padding: 10px;
+  padding-top: 20px;
+}
+
+#title, #description {
+   font-family: 'Press Start 2P', sans-serif;
+}
+
+p {
+   color: #262626;
+   font-size: 1em;
+}
+
+.labels {
+   display: inline-block;
+   text-align: right;
+   width: 40%;
+   padding: 5px;
+   vertical-align: top;
+   margin-top: 10px;
+   font-size: 1em;
+}
+
+.right-side {
+   display: inline-block;
+   text-align: left;
+   width: 48%;
+   vertical-align: middle;
+   font-size: 1em;
+}
+
+.input-field {
+    
+   height: 20px;
+   width: 280px;
+   padding: 5px;
+   margin: 10px;
+   border: 1px solid #c0c0c0;
+   border-radius: 2px;
+   
+}
+
+.dropdown {
+  height: 35px;
+  width: 100px;
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+}
+
+.labels {
+   font-weight: bold;
+}
+
+.radio, .checkbox {
+  position: relative;
+  left: -43px;
+  margin-left: 10px;
+  display: block;
+  padding-bottom: 10px;
+}
+
+.comments {
+  height: 100px;
+  width: 280px;
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+  resize: vertical;
+}
+
+#submit {
+   height: 50px;
+   width: 100px;
+   padding: 5px;
+   margin: 10px;
+   border: 1px solid;
+   border-radius: 5px;
+   font-family: 'Press Start 2P', sans-serif;
+   background-color: #6441a5;
+   color: white;
+   font-size: 0.9em;
+}
+
+@media screen and (max-width: 833px) {
+  .input-field {
+    width: 80%;
+  }
+  select {
+    width: 90%;
+  }
+  .comments {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .labels {
+    width: 100%;
+    text-align: left;
+  }
+  .right-side {
+    width: 80%;
+    float: left;
+  }
+  .input-field {
+    width: 100%;
+  }
+  select {
+    width: 100%;
+  }
+  .comments {
+    width: 100%;
+  }
+}

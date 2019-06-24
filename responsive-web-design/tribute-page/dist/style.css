@@ -1,0 +1,60 @@
+body {
+   background-color: #0d0208;
+}
+
+#main {
+  width: 85%;
+  max-width: 800px;
+  border-style: solid;
+  border-color: #008F11;
+  padding: 0px 25px 0px 25px;
+}
+
+h1, h2 {
+   color: #00FF41;
+   text-align: center;
+   font-family: 'Orbitron', sans-serif;
+   font-size: 2em;
+}
+
+#img-div {
+   color: #00FF41;
+   border-color: #008F11;
+   text-align: center;
+   position: relative;
+   font-size: 1em;
+}
+
+#img-div i {
+   font-size: 0.9em;
+}
+
+img {
+   max-width: 100%;
+   display: block;
+   height: auto;
+   padding: 5px;
+}
+
+a {
+   color: #008F11;
+}
+
+a:hover {
+   color: #003B00;
+}
+
+p {
+   color: #00FF41;
+   text-align: justify;
+   font-family: 'Roboto Mono', monospace;
+   font-size: 1.2em;
+}
+
+hr {
+   color: #008F11;
+}
+
+#footer p {
+   text-align: center;
+}

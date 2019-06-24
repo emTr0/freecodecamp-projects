@@ -1,0 +1,200 @@
+<nav id="navbar">
+  <header>Phaser Docs</header>
+  <ul>
+    <li><a class="nav-link" href="#What_is_Phaser">What is Phaser</a></li>
+    <li><a class="nav-link" href="#Install_Phaser">Install Phaser</a></li>
+    <li><a class="nav-link" href="#API_Docs">API Docs</a></li>
+    <li><a class="nav-link" href="#Get_Started">Get Started</a></li>
+    <li><a class="nav-link" href="#Facebook_Instant_Games">Facebook Instant Games</a></li>
+    <li><a class="nav-link" href="#Create_Your_First_Phaser_3_Example">Create Your First Phaser 3 Example</a></li>
+    <li><a class="nav-link" href="#How_to_Contribute">How to Contribute</a></li>
+    <li><a class="nav-link" href="#Created_By">Created By</a></li>
+  </ul>
+</nav>
+
+<main id="main-doc">
+  <section class="main-section" id="What_is_Phaser">
+    <header>What is Phaser</header>
+    <article>
+      <p>Phaser is a fun, free and fast 2D game framework for making HTML5 games for desktop and mobile web browsers, supporting Canvas and WebGL rendering.</p>
+    </article>
+  </section>
+  
+  <section class="main-section" id="Install_Phaser">
+    <header>Install Phaser</header>
+    <article>
+      <p>Install via npm:</p>
+      <code>npm install phaser</code>
+      <p>Install via CDN:</p>
+      <p>Phaser is on jsDelivr which is a "super-fast CDN for developers". Include the following in your html:</p>
+      <code>&lt;script src="//cdn.jsdelivr.net/npm/phaser@3.17.0/dist/phaser.js">&lt;/script&gt;</code>
+      <p> or the minified version:</p>
+      <code>&lt;script src="//cdn.jsdelivr.net/npm/phaser@3.17.0/dist/phaser.min.js">&lt;/script&gt;</code>
+    </article>
+  </section>
+  
+  <section class="main-section" id="API_Docs">
+    <header>API Docs</header>
+    <article>
+      <p>Go to <a href="https://photonstorm.github.io/phaser3-docs/index.html" target="_blank">https://photonstorm.github.io/phaser3-docs/index.html</a> to read the docs online. Use the drop-down menus at the top to navigate the namespaces, classes and Game Objects lists.</p>
+      <p>Or, if you wish to run the docs locally you can checkout the <a href="https://github.com/photonstorm/phaser3-docs" target="_blank">phaser3-docs</a> repository and then read the documentation by pointing your browser to the <code>docs/</code> folder.</p>
+      <p>The documentation for Phaser 3 is an on-going project. Please help us by searching the Phaser code for any instance of the string <code>[description]</code> and then replacing it with some documentation.</p>
+    </article>
+  </section>
+  
+  <section class="main-section" id="Get_Started">
+    <header>Get Started</header>
+    <article>
+      <p>Tutorials and guides on Phaser 3 development are being published every week.</p>
+      <ul>
+        <li><a href="https://phaser.io/tutorials/getting-started-phaser3" target="_blank">Getting Started with Phaser 3</a> (useful if you are completely new to Phaser)</li>
+        <li><a href="https://phaser.io/tutorials/making-your-first-phaser-3-game" target="_blank">Making your first Phaser 3 Game</a></li>
+        <li>The <a href="https://academy.zenva.com/product/html5-game-phaser-mini-degree/?a=13" target="_blank">Complete Phaser 3 Game Development course</a> contains over 15 hours of videos covering all kinds of important topics.</li>
+        <li>Plus, there are <a href="http://phaser.io/learn" target="_blank">over 700 Phaser tutorials</a> listed on the official website.</li>
+      </ul>
+      <p>Also, please subscribe to the <a href="https://phaser.io/community/newsletter" target="_blank">Phaser World</a> newsletter for details about new tutorials as they are published.</p>
+    </article>
+  </section>
+  
+  <section class="main-section" id="Facebook_Instant_Games">
+    <header>Facebook Instant Games</header>
+    <article>
+      <p>Phaser 3.13 introduced the new Facebook Instant Games Plugin. The plugin provides a seamless bridge between Phaser and version 6.2 of the Facebook Instant Games SDK. Every single SDK function is available via the plugin and we will keep track of the official SDK to make sure they stay in sync.</p>
+      <p>The plugin offers the following features:</p>
+      <ul>
+        <li>Easy integration with the Phaser Loader so load events update the Facebook progress circle.</li>
+        <li>Events for every plugin method, allowing the async calls of the SDK to be correctly inserted into the Phaser game flow. When SDK calls resolve they will surface naturally as a Phaser event and you'll know you can safely act upon them without potentially doing something mid-way through the game step.</li>
+        <li>All Plugin methods check if the call is part of the supported APIs available in the SDK, without needing to launch an async request first.</li>
+        <li>Instant access to platform, player and locale data.</li>
+        <li>Easily load player photos directly into the Texture Manager, ready for use with a Game Object.</li>
+        <li>Subscribe to game bots.</li>
+        <li>The plugin has a built-in Data Manager which makes dealing with data stored on Facebook seamless. Just create whatever data properties you need and they are automatically synced.</li>
+        <li>Support for FB stats, to retrieve, store and increment stats into cloud storage.</li>
+        <li>Save Session data with built-in session length validation.</li>
+        <li>Easy context switching, to swap between game instances and session data retrieval.</li>
+        <li>Easily open a Facebook share, invite, request or game challenge window and populate the text and image content using any image stored in the Texture cache.</li>
+        <li>Full Leaderboard support. Retrieve, scan and update leaderboard entries, as well as player matching.</li>
+        <li>Support for in-app purchases, with product catalogs, the ability to handle purchases, get past purchases and consume previously unlocked purchases.</li>
+        <li>Easily preload a set of interstitial ads, in both banner and video form, then display the ad at any point in your game, with in-built tracking of ads displayed and inventory available.</li>
+        <li>Plus other features, such as logging to FB Analytics, creating short cuts, switching games, etc.</li>
+      </ul>
+      <p>We've 3 tutorials related to Facebook Instant Games and Phaser:</p>
+      <ul>
+        <li><a href="http://phaser.io/news/2018/10/facebook-instant-games-phaser-tutorial" target="_blank">Getting Started with Facebook Instant Games</a></li>
+        <li><a href="http://phaser.io/news/2018/11/facebook-instant-games-leaderboards-tutorial" target="_blank">Facebook Instant Games Leaderboards Tutorial</a></li>
+        <li><a href="http://phaser.io/news/2018/12/facebook-instant-games-ads-tutorial" target="_blank">Displaying Ads in your Instant Games</a></li>
+      </ul>
+      <p>A special build of Phaser with the Facebook Instant Games Plugin ready-enabled is <a href="https://www.jsdelivr.com/projects/phaser" target="_blank">available on jsDelivr</a>. Include the following in your html:</p>
+      <code>&lt;script src="//cdn.jsdelivr.net/npm/phaser@3.17.0/dist/phaser-facebook-instant-games.js"&gt;&lt;/script&gt;</code>
+      <p>or the minified version:</p>
+      <code>&lt;script src="//cdn.jsdelivr.net/npm/phaser@3.18.0/dist/phaser-facebook-instant-games.min.js">&lt;/script&gt;</code>
+      <p>The build files are in the git repository in the dist folder, and you can also include the plugin in custom builds.</p>
+    </article>
+  </section>
+  
+  <section class="main-section" id="Create_Your_First_Phaser_3_Example">
+    <header>Create Your First Phaser 3 Example</header>
+    <article>
+      <p>Create an <code>index.html</code> page locally and paste the following code into it:</p>
+      <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;script src="https://cdn.jsdelivr.net/npm/phaser@3.18.0/dist/phaser-arcade-physics.min.js">&lt;/script&gt; 
+&lt;/head&gt;
+&lt;body&gt;
+
+    &lt;script>&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+      <p>This is a standard empty webpage. You'll notice there's a script tag that is pulling in a build of Phaser 3, but otherwise this webpage doesn't do anything yet. Now let's set-up the game config. Paste the following between the <code>&lt;script&gt;&lt;/script&gt;</code> tags:</p>
+      <pre><code>
+var config = {
+    type: Phaser.AUTO,
+    width: 800,
+    height: 600,
+    physics: {
+        default: 'arcade',
+        arcade: {
+            gravity: { y: 200 }
+        }
+    },
+    scene: {
+        preload: preload,
+        create: create
+    }
+};
+</code></pre>
+      <p><code>config</code> is a pretty standard Phaser 3 Game Configuration object. We tell <code>config</code> to use the WebGL renderer if it can, set the canvas to a size of 800x600 pixels, enable Arcade Physics, and finally call the preload and create functions. <code>preload</code> and <code>create</code> have not been implemented yet, so if you run this JavaScript code, you will have an error. Add the following after <code>config</code>:</p>
+      <pre><code>
+var game = new Phaser.Game(config);
+
+function preload ()
+{
+    this.load.setBaseURL('http://labs.phaser.io');
+
+    this.load.image('sky', 'assets/skies/space3.png');
+    this.load.image('logo', 'assets/sprites/phaser3-logo.png');
+    this.load.image('red', 'assets/particles/red.png');
+}
+
+function create ()
+{
+}
+</code></pre>
+      <p><code>game</code> is a Phaser Game instance that uses our configuration object <code>config</code>. We also add function definitions for <code>preload</code> and <code>create</code>. The preload function helps you easily load assets into your game. In <code>preload</code>, we set the Base URL to be the Phaser server and load 3 PNG files.</p>
+      <p>The <code>create</code> function is empty, so it's time to fill it in:</p>
+      <pre><code>
+function create ()
+{
+    this.add.image(400, 300, 'sky');
+
+    var particles = this.add.particles('red');
+
+    var emitter = particles.createEmitter({
+        speed: 100,
+        scale: { start: 1, end: 0 },
+        blendMode: 'ADD'
+    });
+
+    var logo = this.physics.add.image(400, 100, 'logo');
+
+    logo.setVelocity(100, 200);
+    logo.setBounce(1, 1);
+    logo.setCollideWorldBounds(true);
+
+    emitter.startFollow(logo);
+}
+</code></pre>
+      <p>Here we add a sky image into the game and create a Particle Emitter. The scale value means that the particles will initially be large and will shrink to nothing as their lifespan progresses.</p>
+      <p>After creating the emitter, we add a logo image called logo. Since logo is a Physics Image, logo is given a physics body by default. We set some properties for logo: velocity, bounce (or restitution), and collision with the world bounds. These properties will make our logo bounce around the screen. Finally, we tell the particle emitter to follow the logo - so as the logo moves, the particles will flow from it.</p>
+    </article>
+  </section>
+  
+  <section class="main-section" id="How_to_Contribute">
+    <header>How to Contribute</header>
+    <article>
+      <p>The <a href="https://github.com/photonstorm/phaser/blob/master/.github/CONTRIBUTING.md" target="_blank">Contributors Guide</a> contains full details on how to help with Phaser development. The main points are:</p>
+      <ul>
+        <li>Found a bug? Report it on <a href="https://github.com/photonstorm/phaser/issues" target="_blank">GitHub Issues</a> and include a code sample. Please state which version of Phaser you are using! This is vitally important.</li>
+        <li>Before submitting a Pull Request run your code through <a href="https://eslint.org/" target="_blank">ES Lint</a> using our <a href="https://github.com/photonstorm/phaser/blob/master/.eslintrc.json" target="_blank">config</a> and respect our <a href="https://github.com/photonstorm/phaser/blob/master/.editorconfig" target="_blank">Editor Config</a>.</li>
+        <li>Before contributing read the <a href="https://github.com/photonstorm/phaser/blob/master/.github/CODE_OF_CONDUCT.md" target="_blank">code of conduct</a>.</li>
+      </ul>
+<p>Written something cool in Phaser? Please tell us about it in the <a href="https://phaser.discourse.group/" target="_blank">forum</a>, or email support@phaser.io</p>
+    </article>
+  </section>
+  
+  <section class="main-section" id="Created_By">
+    <header>Created By</header>
+    <article>
+      <p>Phaser is a <a href="http://www.photonstorm.com" target="_blank">Photon Storm</a> production.</p>
+      <p>Created by <a href="mailto:rich@photonstorm.com">Richard Davey</a>. Powered by coffee, anime, pixels and love.</p>
+      <p>The Phaser logo and characters are © 2019 Photon Storm Limited.</p>      
+      <p>All rights reserved.</p>
+      <p>"Above all, video games are meant to be just one thing: fun. Fun for everyone." - Satoru Iwata</p>
+      <p>This CodePen remix coded by <a href="https://twitter.com/emTr0" target="_blank">emTr0</a>.</p>
+    </article>
+  </section>  
+</main>
